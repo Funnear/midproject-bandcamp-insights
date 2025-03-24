@@ -8,14 +8,14 @@ This guide helps you set up a virtual environment with all dependencies—includ
 
 ### For Mac/Linux
 
-```
-python3 -m venv venv
-source venv/bin/activate
+```bash
+python3 -m venv myenv64; \
+source myenv64/bin/activate
 ```
 
 To deactivate:
 
-```
+```bash
 deactivate
 ```
 
@@ -58,14 +58,14 @@ Reference: https://openmp.llvm.org/design/Runtimes.html
 
 Update pip and install required libraries:
 
-```
-pip install --upgrade pip
+```bash
+pip install --upgrade pip; \
 pip install -r requirements.txt
 ```
 
 Install internal packages (like local modules or submodules):
 
-```
+```bash
 pip install -e .
 ```
 
@@ -75,13 +75,13 @@ pip install -e .
 
 Precondition: install `ipykernel` in your requirements first.
 
-```
+```bash
 python -m ipykernel install --user --name=venv --display-name "Python 64 (venv)"
 ```
 
 Restart VS Code, open a notebook, and:
 
-```
+```python
 !which python
 ```
 
@@ -96,24 +96,24 @@ Then select the correct kernel:
 
 ### Add Submodule
 
-```
-git submodule add https://github.com/YourUsername/data_ravers_utils.git libs/data_ravers_utils
+```bash
+git submodule add https://github.com/funnear/data_ravers_utils.git src/data_ravers_utils; \
 git submodule update --init --recursive
 ```
 
 ### Install Submodule as Editable Package
 
-```
-pip install -e ./libs/data_ravers_utils
+```bash
+pip install -e ./src/data_ravers_utils
 ```
 
 ### Import Inside Jupyter Notebook
 
-```
+```python
 import sys, os
 
 # Append submodule path
-module_path = os.path.abspath("./libs")
+module_path = os.path.abspath("./src")
 if module_path not in sys.path:
     sys.path.append(module_path)
 
@@ -127,15 +127,15 @@ from data_ravers_utils.module_name import some_function
 
 ### Update
 
-```
+```bash
 git submodule update --remote --merge
 ```
 
 ### Remove
 
-```
-git rm --cached libs/data_ravers_utils
-rm -rf .git/modules/libs/data_ravers_utils
+```bash
+git rm --cached libs/data_ravers_utils; \
+rm -rf .git/modules/libs/data_ravers_utils; \
 git commit -m "Removed submodule"
 ```
 
