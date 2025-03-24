@@ -19,6 +19,7 @@ This project was developed as part of my data science bootcamp, with the goal of
 ---
 
 ## 📁 Repository Structure
+```bash
 midproject-bandcamp-insights/
 │
 ├── data/                         # Raw and processed data
@@ -31,6 +32,7 @@ midproject-bandcamp-insights/
 ├── requirements.txt
 ├── LICENSE
 └── README.md
+```
 
 ---
 
