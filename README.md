@@ -22,6 +22,7 @@ This project was developed as part of my data science bootcamp, with the goal of
 midproject-bandcamp-insights/
 │
 ├── data/                         # Raw and processed data
+├── docs/                         # Markdown files with documentation
 ├── notebooks/                    # Jupyter notebooks for each step
 ├── src/                          # Python modules
 │   └── data_ravers_utils/       # Shared utility library (submodule)
@@ -76,7 +77,7 @@ midproject-bandcamp-insights/
 
 4. **Modeling**
    - Binary classification: Predict if buyer pays more than price
-   - Algorithms: Logistic Regression, Random Forest
+   - Algorithms: Logistic Regression, Random Forest, XG Boost
    - Evaluation: Accuracy, ROC AUC, Precision/Recall
 
 5. **Presentation**

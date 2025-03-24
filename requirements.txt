@@ -1,0 +1,18 @@
+# Jupyter & Notebooks
+jupyterlab>=4.3.5
+ipykernel>=6.29.5
+
+# Data Analysis & Machine Learning
+numpy>=2.1
+pandas>=2.2.2
+statsmodels>=0.14.4
+scikit-learn>=1.6.1
+xgboost>=3.0.0
+
+# Visualization
+matplotlib>=3.9.2
+matplotlib-venn>=1.1.2
+seaborn>=0.13.2
+
+# APIs
+kagglehub>=0.3.10
