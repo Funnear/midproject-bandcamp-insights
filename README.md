@@ -10,9 +10,9 @@ This project was developed as part of my data science bootcamp, with the goal of
 
 ## 🧩 Objectives
 
-- Understand **fan generosity**: What factors influence listeners to pay more than the listed price?
 - Identify **sales trends** across formats (digital, physical, merch).
 - Explore **geographic patterns** in item pricing and buyer behavior.
+- Understand **fan generosity**: What factors influence listeners to pay more than the listed price?
 - Train and evaluate a predictive model to estimate fan generosity.
 - Create reusable code modules and data workflows for future music tech projects.
 
@@ -52,10 +52,10 @@ midproject-bandcamp-insights/
 
 - **Python** (Pandas, Seaborn, Scikit-learn, PyMySQL)
 - **Jupyter Notebooks**
-- **MySQL** (for optional SQL operations)
-- **Streamlit** (optional interactive demo)
 - **Git + GitHub**
 - **Kaggle API** for dataset access
+- **MySQL** (for optional SQL operations)
+- **Streamlit** (optional interactive demo)
 
 ---
 

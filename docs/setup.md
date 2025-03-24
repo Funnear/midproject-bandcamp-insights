@@ -127,11 +127,24 @@ from data_ravers_utils.module_name import some_function
 
 ### Update
 
+Pull the latest commits from the submodule's default branch (usually main):
 ```bash
-git submodule update --remote --merge
+git submodule update --remote --merge; \
+git add src/data_ravers_utils; \
+git commit -m "Update data_ravers_utils submodule to latest commit"; \
+git push origin main
 ```
 
-### Remove
+### Add changes and sync with submodule source
+```bash
+cd src/data_ravers_utils; \
+git add --all; \
+git commit -m "Syncing changes from downstream project"; \
+git push origin main; \
+cd ../..
+```
+
+### Remove submodule completely
 
 ```bash
 git rm --cached libs/data_ravers_utils; \
