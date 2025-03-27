@@ -224,3 +224,6 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/jupyternotebooks,python,macos
+models/rf_regressor_base_model.pkl
+models/rf_classifier_base_model.pkl
+models/rf_regressor_best_model.pkl
